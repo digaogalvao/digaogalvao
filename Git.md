@@ -4,11 +4,17 @@ Para usar o Git, os desenvolvedores usam comandos específicos para copiar, cria
 
 - `git init` inicializa um novo repositório Git e começa a acompanhar um diretório existente. Ele adiciona uma subpasta oculta dentro do diretório existente que contém a estrutura de dados interna necessária para o controle de versão.
 
-- `git clone` cria uma cópia local de um projeto que já existe remotamente. O clone inclui todos os arquivos, histórico e branches do projeto.
-
 - `git add` prepara uma alteração. O Git controla as alterações na base de código de um desenvolvedor, mas é necessário testar e tirar um instantâneo das alterações para incluí-las no histórico do projeto. Este comando executa o teste, a primeira parte do processo de duas etapas. Todas as mudanças que são testadas irão tornar-se parte do próximo instantâneo e parte do histórico do projeto. O teste e o commit separados dão aos desenvolvedores total controle sobre o histórico do seu projeto sem alterar como eles codificam e funcionam.
 
-- `git commit` salva o instantâneo no histórico do projeto e conclui o processo de controle de alterações. Em suma, um commit funciona como tirar uma foto. Qualquer item que tenha sido preparado com git add passará a fazer parte do instantâneo com git commit.
+- `git clone` cria uma cópia local de um projeto que já existe remotamente. O clone inclui todos os arquivos, histórico e branches do projeto.
+
+- `git fetch` atualiza os objetos e referências do repositório.
+
+- `git pull` atualiza a linha de desenvolvimento local com atualizações do equivalente remoto. Os desenvolvedores usam este comando se um colega fez commits em um branch remoto, e eles gostaria de refletir essas alterações no seu ambiente local.
+
+- `git log` exibe o histórico de todos os commits do repositório.
+
+- `git checkout` posiciona na branch em que o trabalho será realizado.
 
 - `git status` mostra o status das alterações como não controladas, modificadas ou preparadas.
 
@@ -16,13 +22,9 @@ Para usar o Git, os desenvolvedores usam comandos específicos para copiar, cria
 
 - `git merge` mescla as linhas de desenvolvimento. De modo geral, esse comando é usado para combinar alterações feitas em dois branches distintos. Por exemplo, um desenvolvedor faria merge quando quisesse combinar alterações de um branch de recurso no branch principal para implantação.
 
-- `git pull` atualiza a linha de desenvolvimento local com atualizações do equivalente remoto. Os desenvolvedores usam este comando se um colega fez commits em um branch remoto, e eles gostaria de refletir essas alterações no seu ambiente local.
+- `git commit` salva o instantâneo no histórico do projeto e conclui o processo de controle de alterações. Em suma, um commit funciona como tirar uma foto. Qualquer item que tenha sido preparado com git add passará a fazer parte do instantâneo com git commit.
 
 - `git push` atualiza o repositório remoto com todos os commits feitos localmente em um branch.
-
-- `git log` exibe o histórico de todos os commits do repositório
-
-Para obter mais informações, confira o guia de referência completo de comandos do Git.
 
 ### Contribuir para um repositório existente
 ```
