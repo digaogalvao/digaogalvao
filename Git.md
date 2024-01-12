@@ -22,7 +22,7 @@ Para usar o Git, os desenvolvedores usam comandos específicos para copiar, cria
 
 Para obter mais informações, confira o guia de referência completo de comandos do Git.
 
-Exemplo: Contribuir para um repositório existente
+### Contribuir para um repositório existente
 ```
 # baixe um repositório no GitHub para sua máquina
 git clone https://github.com/owner/repo.git
@@ -43,17 +43,11 @@ git commit -a -m "my updates"
 git push --set-upstream origin my-branch
 ```
 
-### Exemplo: Inicie um novo repositório e publique-o em GitHub
-Primeiro, você deverá criar um novo repositório em GitHub. Para obter mais informações, confira "Olá, Mundo". Não inicialize o repositório com um arquivo LEIAME, .gitignore ou License. Este repositório vazio irá aguardar seu código.
+### Inicie um novo repositório e publique-o no GitHub
+Primeiro, você deverá criar um novo repositório no GitHub para guardar seu código.
 ```
-# crie um novo diretório e inicialize-o com funções específicas do git
+# inicialize com funções específicas do git
 git init my-repo
-
-# mude para o diretório `my-repo`
-cd my-repo
-
-# crie o primeiro arquivo no projeto
-touch README.md
 
 # adicione o novo arquivo ao git
 git add README.md
@@ -68,8 +62,8 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
 git push --set-upstream origin main
 ```
 
-### Exemplo: contribuir para um branch existente em GitHub
-Este exemplo pressupõe que você já tenha um projeto chamado repo no computador e que um novo branch tenha sido enviado por push para o GitHub desde a última vez que as alterações foram feitas localmente.
+### Contribuir para uma branch existente no GitHub
+Nesse exemplo você já tem um projeto chamado repo no local e uma nova branch foi criada no GitHub remoto.
 ```
 # atualizar todas as ramificações de rastreamento remoto e a ramificação atualmente em check-out
 git pull
