@@ -26,7 +26,7 @@ Para usar o Git, os desenvolvedores usam comandos específicos para copiar, cria
 
 - `git push` atualiza o repositório remoto com todos os commits feitos localmente em um branch.
 
-### Contribuir para um repositório existente
+### Exemplo de um repositório existente
 ```
 # baixe um repositório no GitHub para sua máquina
 git clone https://github.com/owner/repo.git
@@ -47,8 +47,7 @@ git commit -a -m "my updates"
 git push --set-upstream origin my-branch
 ```
 
-### Inicie um novo repositório e publique-o no GitHub
-Primeiro, você deverá criar um novo repositório no GitHub para guardar seu código.
+### Exemplo de um novo repositório
 ```
 # inicialize com funções específicas do git
 git init my-repo
@@ -66,8 +65,7 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
 git push --set-upstream origin main
 ```
 
-### Contribuir para uma branch existente no GitHub
-Nesse exemplo você já tem um projeto chamado repo no local e uma nova branch foi criada no GitHub remoto.
+### Exemplo de uma branch existente
 ```
 # atualizar todas as ramificações de rastreamento remoto e a ramificação atualmente em check-out
 git pull
