@@ -26,6 +26,24 @@ Para usar o Git, os desenvolvedores usam comandos específicos para copiar, cria
 
 - `git push` atualiza o repositório remoto com todos os commits feitos localmente em um branch.
 
+### Exemplo de um novo repositório
+```
+# inicialize com funções específicas do git
+git init my-repo
+
+# adicione o novo arquivo ao git
+git add README.md
+
+# salve a criação do novo arquivo
+git commit -m "add README to initial commit"
+
+# forneça o caminho para o repositório que você criou no github
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+
+# enviar as alterações para o github
+git push --set-upstream origin main
+```
+
 ### Exemplo de um repositório existente
 ```
 # baixe um repositório no GitHub para sua máquina
@@ -45,24 +63,6 @@ git commit -a -m "my updates"
 
 # enviar as alterações para o github
 git push --set-upstream origin my-branch
-```
-
-### Exemplo de um novo repositório
-```
-# inicialize com funções específicas do git
-git init my-repo
-
-# adicione o novo arquivo ao git
-git add README.md
-
-# salve a criação do novo arquivo
-git commit -m "add README to initial commit"
-
-# forneça o caminho para o repositório que você criou no github
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
-
-# enviar as alterações para o github
-git push --set-upstream origin main
 ```
 
 ### Exemplo de uma branch existente
