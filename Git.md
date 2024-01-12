@@ -20,6 +20,8 @@ Para usar o Git, os desenvolvedores usam comandos específicos para copiar, cria
 
 - `git push` atualiza o repositório remoto com todos os commits feitos localmente em um branch.
 
+- `git log` exibe o histórico de todos os commits do repositório
+
 Para obter mais informações, confira o guia de referência completo de comandos do Git.
 
 ### Contribuir para um repositório existente
