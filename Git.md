@@ -28,26 +28,38 @@ Para usar o Git, os desenvolvedores usam comandos específicos para copiar, cria
 
 ### Exemplo de um novo repositório
 ```
-# inicialize com funções específicas do git
-git init my-repo
+# inicializa as funções específicas do git
+git init
+
+# verificar as mudanças no projeto
+git status
 
 # adicione o novo arquivo ao git
-git add README.md
+git add arquivo.html
+
+# adiciona mais de um arquivo ao git
+git add .
 
 # salve a criação do novo arquivo
-git commit -m "add README to initial commit"
+git commit -m "comentários da alteração"
+
+# salvar a criação de vários arquivos
+git commit -a -m "comentários das alterações"
 
 # forneça o caminho para o repositório que você criou no github
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+git remote add origin https://github.com/owner/repository.git
+
+# nomear o branch principal
+git branch -M main
 
 # enviar as alterações para o github
-git push --set-upstream origin main
+git push -u origin main
 ```
 
-### Exemplo de um repositório existente
+### Exemplo de nova branch em um repositório existente
 ```
-# baixe um repositório no GitHub para sua máquina
-git clone https://github.com/owner/repo.git
+# clona um repositório remoto para o local
+git clone https://github.com/owner/repository.git
 
 # crie uma nova branch para armazenar novas alterações
 git branch my-branch
@@ -55,30 +67,66 @@ git branch my-branch
 # mudar para a nova branch
 git checkout my-branch
 
-# adicionar arquivos
-git add file.ext
+# cria e muda para a nova branch
+git checkout -b "my-branch"
 
-# salvar alterações
-git commit -a -m "my updates"
+# verificar as mudanças no projeto
+git status
 
-# enviar as alterações para o github
+# salvar a criação de vários arquivos
+git commit -a -m "comentários das alterações"
+
+# enviar a nova branch e as alterações para o github
 git push --set-upstream origin my-branch
 ```
 
-### Exemplo de uma branch existente
+### Exemplo de uma branch existente em um repositório existente
 ```
-# atualizar todas as ramificações de rastreamento remoto e a ramificação atualmente em check-out
+# atualizar a branch local
 git pull
 
-# mude para o branch existente chamado `feature-a`
-git checkout feature-a
+# atuliza todas as referências de branch
+git fetch
 
-# adicione o novo arquivo ao git
-git add file1.md
+# mude para a branch existente
+git checkout branch-a
+
+# verificar todas as branch do repositório
+git branch -a
 
 # salve a criação do novo arquivo
-git commit -m "edit file1"
+git commit -a -m "comentários das alterações"
 
 # enviar as alterações para o github
 git push
+```
+
+### Exemplo de merge entre branch de um repositório
+```
+# mude para a branch principal
+git checkout main
+
+# verificar todas as branch do repositório
+git branch -a
+
+# verificar todos os commits do repositório
+git log
+
+# une o código da branch main ao código da my-branch
+git merge my-branch
+
+# enviar as alterações para o github
+git push
+```
+
+### Exemplo de exclusão e restauração de arquivos da branch
+```
+# verificar as mudanças no projeto
+git status
+
+# excluir arquivos que não serão versionados
+git clean -f
+
+# restaurar arquivo alterado
+git checkout .\arquivo.html
 ```
