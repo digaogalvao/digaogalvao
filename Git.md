@@ -56,7 +56,7 @@ git branch -M main
 git push -u origin main
 ```
 
-### Exemplo de nova branch em um repositório existente
+### Exemplo de uma nova branch em um repositório existente
 ```
 # clona um repositório remoto para o local
 git clone https://github.com/owner/repository.git
