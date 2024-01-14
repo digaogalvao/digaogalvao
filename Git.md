@@ -68,7 +68,7 @@ git branch my-branch
 git checkout my-branch
 
 # cria e muda para a nova branch
-git checkout -b "my-branch"
+git checkout -b my-branch
 
 # verificar as mudanças no projeto
 git status
