@@ -89,7 +89,7 @@ git pull
 git fetch
 
 # mude para a branch existente
-git checkout branch-a
+git checkout branch-exist
 
 # verificar todas as branch do repositório
 git branch -a
