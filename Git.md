@@ -119,14 +119,14 @@ git merge my-branch
 git push
 ```
 
-### Exemplo de exclusão e restauração de arquivos da branch
+### Exemplos diversos de arquivo e branch
 ```
-# verificar as mudanças no projeto
-git status
-
 # excluir arquivos que não serão versionados
 git clean -f
 
 # restaurar arquivo alterado
 git checkout .\arquivo.html
+
+# comparar duas branch
+git diff origin/release/1.0.0..origin/feature/new
 ```
