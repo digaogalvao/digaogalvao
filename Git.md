@@ -115,6 +115,15 @@ git log
 # une o código da branch main ao código da my-branch
 git merge my-branch
 
+# entrar no modo de edição para comentários
+Pressione a tecla 'i'
+
+# sair do mode de edição
+Pressione a tecla 'Esc'
+
+# salvar as alterações e sair
+Digite ':wq' e pressione a tecla 'Enter'
+
 # enviar as alterações para o github
 git push
 ```
