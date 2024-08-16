@@ -128,6 +128,34 @@ Digite ':wq' e pressione a tecla 'Enter'
 git push
 ```
 
+### Exemplo resolvendo conflito de merge
+```
+# após o merge o git vai marcar os arquivos que têm conflito
+arquivo1.ext
+arquivo2.ext
+
+# abra os arquivos em conflito e você verá
+<<<<<<< HEAD
+// Código da sua branch atual
+=======
+/* Código da branch que você está tentando mesclar */
+>>>>>>> origin/branch
+
+# decida qual diferença será mantida
+código da sua branch atual: apague a seção entre ======= e >>>>>>>
+código da branch que você está mesclando: apague a seção entre <<<<<<< HEAD e =======
+
+# depois de resolver os conflitos e salvar adicione os arquivos
+git add arquivo1.ext
+git add arquivo2.ext
+
+# salve a alteração dos arquivos
+git commit -a -m "comentários das alterações"
+
+# enviar as alterações para o github
+git push
+```
+
 ### Exemplos diversos de arquivo e branch
 ```
 # excluir arquivos que não serão versionados
