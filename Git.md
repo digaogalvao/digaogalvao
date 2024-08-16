@@ -128,7 +128,7 @@ Digite ':wq' e pressione a tecla 'Enter'
 git push
 ```
 
-### Exemplo resolvendo conflito de merge
+### Exemplo de como resolver conflitos de merge
 ```
 # após o merge o git vai marcar os arquivos que têm conflito
 arquivo1.ext
