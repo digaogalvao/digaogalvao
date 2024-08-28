@@ -113,7 +113,7 @@ git branch -a
 git log
 
 # une o código da branch main ao código da my-branch
-git merge my-branch
+git merge origin/my-branch
 
 # entrar no modo de edição para comentários
 Pressione a tecla 'i'
