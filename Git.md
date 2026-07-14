@@ -80,6 +80,24 @@ git commit -a -m "comentários das alterações"
 git push --set-upstream origin my-branch
 ```
 
+### Exemplo de uma nova branch a partir de um repositório remoto
+```
+# Atualiza as referências do remoto
+git fetch origin
+
+# Vai para a branch homologacao
+git checkout homologacao
+
+# Atualiza a branch local
+git pull origin homologacao
+
+# Cria a nova branch a partir de homologacao
+git checkout -b fix_operador
+
+# Envia a nova branch para o remoto
+git push -u origin fix_operador
+```
+
 ### Exemplo de uma branch existente em um repositório existente
 ```
 # atualizar a branch local
