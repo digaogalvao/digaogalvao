@@ -85,17 +85,17 @@ git push --set-upstream origin my-branch
 # Atualiza as referências do remoto
 git fetch origin
 
-# Vai para a branch homologacao
-git checkout homologacao
+# Vai para a branch remota
+git checkout branch
 
-# Atualiza a branch local
-git pull origin homologacao
+# Atualiza a branch remota local
+git pull origin branch
 
-# Cria a nova branch a partir de homologacao
-git checkout -b fix_operador
+# Cria a nova branch a partir da branch remota
+git checkout -b my-branch
 
 # Envia a nova branch para o remoto
-git push -u origin fix_operador
+git push -u origin my-branch
 ```
 
 ### Exemplo de uma branch existente em um repositório existente
